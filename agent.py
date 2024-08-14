@@ -23,8 +23,8 @@ class ConversationAgent():
 
     llm = OpenAI(
             temperature= 0.7,
-            #openai_api_key=st.secrets['api']['key'],
-            openai_api_key=os.getenv("OPENAI_API_KEY"),
+            openai_api_key=st.secrets['api']['key'],
+            #openai_api_key=os.getenv("OPENAI_API_KEY"),
             #base_url=st.secrets['api']['base_url']，
          )
 
